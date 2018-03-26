@@ -1,0 +1,12 @@
+    //
+//  Config.Adhoc.xcconfig
+//  FeedStar
+//
+//  Created by 小田和哉 on 2018/03/15.
+//  Copyright © 2018年 K.oda. All rights reserved.
+//
+// Config.Adhoc.xcconfig
+#include "Pods/Target Support Files/Pods-FeedStar/Pods-FeedStar.adhoc.xcconfig"
+PRODUCT_BUNDLE_IDENTIFIER=com.example.SampleConfig.adhoc
+IS_APP_NAME = FeedStar_Adhoc
+BACKEND_URL = http:\/\/api.intensifystudio.com/staging

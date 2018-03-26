@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADD170B2E076C6FA92A8645B /* Pods_FeedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85E40BB7E021F2E16662A23 /* Pods_FeedStarTests.framework */; };
+		A085F47F8F7341668BD9F462 /* Pods_FeedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85E40BB7E021F2E16662A23 /* Pods_FeedStarTests.framework */; };
 		C5C3EE894B41CDD34D59AAF3 /* Pods_FeedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9E9870D7EFB4C9A69F999B /* Pods_FeedStar.framework */; };
 		E522F8A9205534AB008DE59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E522F8A8205534AB008DE59B /* AppDelegate.swift */; };
 		E522F8AB205534AB008DE59B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E522F8AA205534AB008DE59B /* ViewController.swift */; };
 		E522F8AE205534AB008DE59B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E522F8AC205534AB008DE59B /* Main.storyboard */; };
 		E522F8B0205534AB008DE59B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E522F8AF205534AB008DE59B /* Assets.xcassets */; };
 		E522F8B3205534AB008DE59B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E522F8B1205534AB008DE59B /* LaunchScreen.storyboard */; };
-		E522F8BE205534AB008DE59B /* FeedStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E522F8BD205534AB008DE59B /* FeedStarTests.swift */; };
+		E58B19EA20669951000F6600 /* FeedStarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B19E920669951000F6600 /* FeedStarTests.swift */; };
+		E58B19F02066A2D4000F6600 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B19EF2066A2D4000F6600 /* SecondViewController.swift */; };
+		E58B19FC2067EDA3000F6600 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B19EC20669F6E000F6600 /* UIViewController+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E522F8BA205534AB008DE59B /* PBXContainerItemProxy */ = {
+		E58B19E3206698FF000F6600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E522F89D205534AB008DE59B /* Project object */;
 			proxyType = 1;
@@ -28,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051016A590F8FF0B8EEF9B79 /* Pods-FeedStarTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedStarTests.adhoc.xcconfig"; path = "Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		539730B667CBCF2DF7B919AE /* Pods-FeedStarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedStarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5588387EF6095BB8884AAD53 /* Pods-FeedStar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedStar.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedStar/Pods-FeedStar.release.xcconfig"; sourceTree = "<group>"; };
 		615003EC628E4C86DEA07EF5 /* Pods-FeedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,9 +43,14 @@
 		E522F8AF205534AB008DE59B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E522F8B2205534AB008DE59B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E522F8B4205534AB008DE59B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E522F8B9205534AB008DE59B /* FeedStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E522F8BD205534AB008DE59B /* FeedStarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStarTests.swift; sourceTree = "<group>"; };
-		E522F8BF205534AB008DE59B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E573CE4B205AABDB0060715B /* Config.Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Debug.xcconfig; sourceTree = "<group>"; };
+		E573CE4C205AABEF0060715B /* Config.Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Adhoc.xcconfig; sourceTree = "<group>"; };
+		E573CE4D205AAC0A0060715B /* Config.Store.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Store.xcconfig; sourceTree = "<group>"; };
+		E58B19DE206698FE000F6600 /* FeedStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58B19E2206698FF000F6600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E58B19E920669951000F6600 /* FeedStarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedStarTests.swift; sourceTree = "<group>"; };
+		E58B19EC20669F6E000F6600 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		E58B19EF2066A2D4000F6600 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		FAE46E346A3AE9281458A175 /* Pods-FeedStar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedStar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FeedStar/Pods-FeedStar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,11 +63,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E522F8B6205534AB008DE59B /* Frameworks */ = {
+		E58B19DB206698FE000F6600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADD170B2E076C6FA92A8645B /* Pods_FeedStarTests.framework in Frameworks */,
+				A085F47F8F7341668BD9F462 /* Pods_FeedStarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +90,7 @@
 				5588387EF6095BB8884AAD53 /* Pods-FeedStar.release.xcconfig */,
 				539730B667CBCF2DF7B919AE /* Pods-FeedStarTests.debug.xcconfig */,
 				615003EC628E4C86DEA07EF5 /* Pods-FeedStarTests.release.xcconfig */,
+				051016A590F8FF0B8EEF9B79 /* Pods-FeedStarTests.adhoc.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -89,8 +98,9 @@
 		E522F89C205534AB008DE59B = {
 			isa = PBXGroup;
 			children = (
+				E53435D7205E7FEE008F5371 /* Config */,
 				E522F8A7205534AB008DE59B /* FeedStar */,
-				E522F8BC205534AB008DE59B /* FeedStarTests */,
+				E58B19DF206698FF000F6600 /* FeedStarTests */,
 				E522F8A6205534AB008DE59B /* Products */,
 				7FCF9E99946DA878DFAE662A /* Pods */,
 				49D8085A4C7A429B5F3CBF87 /* Frameworks */,
@@ -101,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				E522F8A5205534AB008DE59B /* FeedStar.app */,
-				E522F8B9205534AB008DE59B /* FeedStarTests.xctest */,
+				E58B19DE206698FE000F6600 /* FeedStarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,21 +119,33 @@
 		E522F8A7205534AB008DE59B /* FeedStar */ = {
 			isa = PBXGroup;
 			children = (
+				E58B19EC20669F6E000F6600 /* UIViewController+Utils.swift */,
 				E522F8A8205534AB008DE59B /* AppDelegate.swift */,
 				E522F8AA205534AB008DE59B /* ViewController.swift */,
 				E522F8AC205534AB008DE59B /* Main.storyboard */,
 				E522F8AF205534AB008DE59B /* Assets.xcassets */,
 				E522F8B1205534AB008DE59B /* LaunchScreen.storyboard */,
 				E522F8B4205534AB008DE59B /* Info.plist */,
+				E58B19EF2066A2D4000F6600 /* SecondViewController.swift */,
 			);
 			path = FeedStar;
 			sourceTree = "<group>";
 		};
-		E522F8BC205534AB008DE59B /* FeedStarTests */ = {
+		E53435D7205E7FEE008F5371 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				E522F8BD205534AB008DE59B /* FeedStarTests.swift */,
-				E522F8BF205534AB008DE59B /* Info.plist */,
+				E573CE4D205AAC0A0060715B /* Config.Store.xcconfig */,
+				E573CE4C205AABEF0060715B /* Config.Adhoc.xcconfig */,
+				E573CE4B205AABDB0060715B /* Config.Debug.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E58B19DF206698FF000F6600 /* FeedStarTests */ = {
+			isa = PBXGroup;
+			children = (
+				E58B19E920669951000F6600 /* FeedStarTests.swift */,
+				E58B19E2206698FF000F6600 /* Info.plist */,
 			);
 			path = FeedStarTests;
 			sourceTree = "<group>";
@@ -151,25 +173,25 @@
 			productReference = E522F8A5205534AB008DE59B /* FeedStar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E522F8B8205534AB008DE59B /* FeedStarTests */ = {
+		E58B19DD206698FE000F6600 /* FeedStarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E522F8C5205534AB008DE59B /* Build configuration list for PBXNativeTarget "FeedStarTests" */;
+			buildConfigurationList = E58B19E5206698FF000F6600 /* Build configuration list for PBXNativeTarget "FeedStarTests" */;
 			buildPhases = (
-				64BF824EBEC6AFAA1987C02F /* [CP] Check Pods Manifest.lock */,
-				E522F8B5205534AB008DE59B /* Sources */,
-				E522F8B6205534AB008DE59B /* Frameworks */,
-				E522F8B7205534AB008DE59B /* Resources */,
-				36896AD6DC24C785A8D08838 /* [CP] Embed Pods Frameworks */,
-				D70716D449E1E43C304BD2B0 /* [CP] Copy Pods Resources */,
+				7466DA463B349EBD7FE321A2 /* [CP] Check Pods Manifest.lock */,
+				E58B19DA206698FE000F6600 /* Sources */,
+				E58B19DB206698FE000F6600 /* Frameworks */,
+				E58B19DC206698FE000F6600 /* Resources */,
+				C7E00AAE7CC3E0971B912D31 /* [CP] Embed Pods Frameworks */,
+				FE3612DDFBB2210911648F01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E522F8BB205534AB008DE59B /* PBXTargetDependency */,
+				E58B19E4206698FF000F6600 /* PBXTargetDependency */,
 			);
 			name = FeedStarTests;
 			productName = FeedStarTests;
-			productReference = E522F8B9205534AB008DE59B /* FeedStarTests.xctest */;
+			productReference = E58B19DE206698FE000F6600 /* FeedStarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +208,7 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					E522F8B8205534AB008DE59B = {
+					E58B19DD206698FE000F6600 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E522F8A4205534AB008DE59B;
@@ -207,7 +229,7 @@
 			projectRoot = "";
 			targets = (
 				E522F8A4205534AB008DE59B /* FeedStar */,
-				E522F8B8205534AB008DE59B /* FeedStarTests */,
+				E58B19DD206698FE000F6600 /* FeedStarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,7 +245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E522F8B7205534AB008DE59B /* Resources */ = {
+		E58B19DC206698FE000F6600 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,9 +263,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FeedStar/Pods-FeedStar-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -251,9 +276,12 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FeedKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -263,29 +291,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedStar/Pods-FeedStar-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		36896AD6DC24C785A8D08838 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64BF824EBEC6AFAA1987C02F /* [CP] Check Pods Manifest.lock */ = {
+		7466DA463B349EBD7FE321A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,19 +327,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D70716D449E1E43C304BD2B0 /* [CP] Copy Pods Resources */ = {
+		C7E00AAE7CC3E0971B912D31 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FC5B241378A77ED1FA201F16 /* [CP] Copy Pods Resources */ = {
@@ -351,6 +364,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedStar/Pods-FeedStar-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FE3612DDFBB2210911648F01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -358,26 +386,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58B19FC2067EDA3000F6600 /* UIViewController+Utils.swift in Sources */,
+				E58B19F02066A2D4000F6600 /* SecondViewController.swift in Sources */,
 				E522F8AB205534AB008DE59B /* ViewController.swift in Sources */,
 				E522F8A9205534AB008DE59B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E522F8B5205534AB008DE59B /* Sources */ = {
+		E58B19DA206698FE000F6600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E522F8BE205534AB008DE59B /* FeedStarTests.swift in Sources */,
+				E58B19EA20669951000F6600 /* FeedStarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E522F8BB205534AB008DE59B /* PBXTargetDependency */ = {
+		E58B19E4206698FF000F6600 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E522F8A4205534AB008DE59B /* FeedStar */;
-			targetProxy = E522F8BA205534AB008DE59B /* PBXContainerItemProxy */;
+			targetProxy = E58B19E3206698FF000F6600 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -452,6 +482,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -502,6 +533,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -510,15 +542,18 @@
 		};
 		E522F8C3205534AB008DE59B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAE46E346A3AE9281458A175 /* Pods-FeedStar.debug.xcconfig */;
+			baseConfigurationReference = E573CE4B205AABDB0060715B /* Config.Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 652CM8YVDB;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = FeedStar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = oda.kazuya.FeedStar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FeedStar;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -526,25 +561,97 @@
 		};
 		E522F8C4205534AB008DE59B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5588387EF6095BB8884AAD53 /* Pods-FeedStar.release.xcconfig */;
+			baseConfigurationReference = E573CE4D205AAC0A0060715B /* Config.Store.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 652CM8YVDB;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = FeedStar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = oda.kazuya.FeedStar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FeedStar;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		E522F8C6205534AB008DE59B /* Debug */ = {
+		E573CE4E205AACBB0060715B /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Adhoc;
+		};
+		E573CE4F205AACBB0060715B /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E573CE4C205AABEF0060715B /* Config.Adhoc.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 652CM8YVDB;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
+				INFOPLIST_FILE = FeedStar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = FeedStar;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Adhoc;
+		};
+		E58B19E6206698FF000F6600 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 539730B667CBCF2DF7B919AE /* Pods-FeedStarTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 652CM8YVDB;
@@ -558,11 +665,10 @@
 			};
 			name = Debug;
 		};
-		E522F8C7205534AB008DE59B /* Release */ = {
+		E58B19E7206698FF000F6600 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 615003EC628E4C86DEA07EF5 /* Pods-FeedStarTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 652CM8YVDB;
@@ -575,6 +681,23 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedStar.app/FeedStar";
 			};
 			name = Release;
+		};
+		E58B19E8206698FF000F6600 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 051016A590F8FF0B8EEF9B79 /* Pods-FeedStarTests.adhoc.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 652CM8YVDB;
+				INFOPLIST_FILE = FeedStarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = oda.kazuya.FeedStarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FeedStar.app/FeedStar";
+			};
+			name = Adhoc;
 		};
 /* End XCBuildConfiguration section */
 
@@ -584,6 +707,7 @@
 			buildConfigurations = (
 				E522F8C0205534AB008DE59B /* Debug */,
 				E522F8C1205534AB008DE59B /* Release */,
+				E573CE4E205AACBB0060715B /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -593,15 +717,17 @@
 			buildConfigurations = (
 				E522F8C3205534AB008DE59B /* Debug */,
 				E522F8C4205534AB008DE59B /* Release */,
+				E573CE4F205AACBB0060715B /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E522F8C5205534AB008DE59B /* Build configuration list for PBXNativeTarget "FeedStarTests" */ = {
+		E58B19E5206698FF000F6600 /* Build configuration list for PBXNativeTarget "FeedStarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E522F8C6205534AB008DE59B /* Debug */,
-				E522F8C7205534AB008DE59B /* Release */,
+				E58B19E6206698FF000F6600 /* Debug */,
+				E58B19E7206698FF000F6600 /* Release */,
+				E58B19E8206698FF000F6600 /* Adhoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

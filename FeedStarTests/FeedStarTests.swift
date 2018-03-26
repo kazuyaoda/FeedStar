@@ -2,7 +2,7 @@
 //  FeedStarTests.swift
 //  FeedStarTests
 //
-//  Created by 小田和哉 on 2018/03/11.
+//  Created by 小田和哉 on 2018/03/24.
 //  Copyright © 2018年 K.oda. All rights reserved.
 //
 
@@ -33,4 +33,33 @@ class FeedStarTests: XCTestCase {
         }
     }
     
+    func testViewLifeCycle() {
+        
+        let viewController = SecondViewController()
+        
+        print("call loadView")
+        viewController.loadViewIfNeeded()
+        
+        print("set rootViewController")
+        UIApplication.shared.keyWindow!.rootViewController = viewController
+        
+        
+        let button = viewController.view.subviews
+            .flatMap{ $0 as? UIButton}
+            .first( where: { button in
+                return button.titleLabel?.text == "Start"
+            })
+        
+        // viewDidAppearまでには時間がかかるので、少し待つ🐣
+        
+        let exp = expectation(description: "test")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            XCTAssertTrue(UIViewController.topViewController(from: viewController) is SecondViewController)
+            exp.fulfill()
+        }
+        
+        wait(for: [exp], timeout: 3.0)
+        
+    }
+ 
 }

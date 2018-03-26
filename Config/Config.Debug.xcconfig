@@ -1,0 +1,12 @@
+//
+//  Config.Debug.xcconfig
+//  FeedStar
+//
+//  Created by 小田和哉 on 2018/03/15.
+//  Copyright © 2018年 K.oda. All rights reserved.
+//
+// Config.Debug.xcconfig
+#include "Pods/Target Support Files/Pods-FeedStar/Pods-FeedStar.debug.xcconfig"
+PRODUCT_BUNDLE_IDENTIFIER=com.example.SampleConfig.debug
+IS_APP_NAME = FeedStar_dev
+BACKEND_URL = http:/\/localhost/api/pref.json

@@ -11,6 +11,8 @@ target 'FeedStar' do
     pod 'SwiftyJSON'
     pod 'ObjectMapper'
     pod 'AlamofireObjectMapper', '~> 5.0'
+    pod 'RealmSwift'
+	pod 'AlamofireImage'
 end
 
 target 'FeedStarTests' do
