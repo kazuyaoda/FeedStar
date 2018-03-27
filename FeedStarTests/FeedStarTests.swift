@@ -13,6 +13,8 @@ class FeedStarTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
+        
+        XCUIApplication().launch()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -33,22 +35,53 @@ class FeedStarTests: XCTestCase {
         }
     }
     
+    
+    func testUITest(){
+        
+        let app = XCUIApplication()
+        
+        // accessibilityIdentifier に ViewIdentifierCallApiButton が定義されている UIButton を取得
+        let buttonElement = app.buttons["start"]
+        // ボタンをタップ
+        buttonElement.tap()
+        
+        
+        let exp = expectation(description: "test")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            XCTAssertTrue(UIViewController.topViewController(from: app.windows.element(boundBy: 0)) is SecondViewController)
+            exp.fulfill()
+        }
+        
+        wait(for: [exp], timeout: 3.0)
+    }
+    
     func testViewLifeCycle() {
         
-        let viewController = SecondViewController()
+        let parentViewController = UIViewController()
+        let viewController = ViewController()
         
-        print("call loadView")
-        viewController.loadViewIfNeeded()
+        
         
         print("set rootViewController")
-        UIApplication.shared.keyWindow!.rootViewController = viewController
+        UIApplication.shared.keyWindow!.rootViewController = parentViewController
         
-        
-        let button = viewController.view.subviews
-            .flatMap{ $0 as? UIButton}
-            .first( where: { button in
-                return button.titleLabel?.text == "Start"
-            })
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            parentViewController.present(viewController, animated: false, completion: nil)
+            // _ = viewController.view でもよい
+            viewController.loadViewIfNeeded()
+            
+            print("call layoutIfNeeded")
+            viewController.view.layoutIfNeeded()
+            
+            let button = viewController.view.subviews
+                .flatMap{ $0 as? UIButton}
+                .first( where: { button in
+                    return button.titleLabel?.text == "Start"
+                })
+            
+
+
+        }
         
         // viewDidAppearまでには時間がかかるので、少し待つ🐣
         
