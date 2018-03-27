@@ -21,10 +21,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jl5-Zy-Wwp">
                                 <rect key="frame" x="170" y="318" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="start"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iA3-KX-OVQ"/>
-                                    <segue destination="SCJ-hQ-V8z" kind="show" id="TqQ-r8-M4N"/>
                                 </connections>
                             </button>
                         </subviews>

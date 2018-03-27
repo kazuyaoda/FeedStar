@@ -33,9 +33,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E522F8B8205534AB008DE59B"
+               BlueprintIdentifier = "E58B19DD206698FE000F6600"
                BuildableName = "FeedStarTests.xctest"
                BlueprintName = "FeedStarTests"
+               ReferencedContainer = "container:FeedStar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E505882C20694A1200C23994"
+               BuildableName = "FeedStarUITests.xctest"
+               BlueprintName = "FeedStarUITests"
                ReferencedContainer = "container:FeedStar.xcodeproj">
             </BuildableReference>
          </TestableReference>

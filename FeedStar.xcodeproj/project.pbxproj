@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A085F47F8F7341668BD9F462 /* Pods_FeedStarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85E40BB7E021F2E16662A23 /* Pods_FeedStarTests.framework */; };
 		C5C3EE894B41CDD34D59AAF3 /* Pods_FeedStar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9E9870D7EFB4C9A69F999B /* Pods_FeedStar.framework */; };
+		E505883020694A1200C23994 /* FeedStarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E505882F20694A1200C23994 /* FeedStarUITests.swift */; };
 		E522F8A9205534AB008DE59B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E522F8A8205534AB008DE59B /* AppDelegate.swift */; };
 		E522F8AB205534AB008DE59B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E522F8AA205534AB008DE59B /* ViewController.swift */; };
 		E522F8AE205534AB008DE59B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E522F8AC205534AB008DE59B /* Main.storyboard */; };
@@ -20,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E505883220694A1200C23994 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E522F89D205534AB008DE59B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E522F8A4205534AB008DE59B;
+			remoteInfo = FeedStar;
+		};
 		E58B19E3206698FF000F6600 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E522F89D205534AB008DE59B /* Project object */;
@@ -36,6 +44,9 @@
 		615003EC628E4C86DEA07EF5 /* Pods-FeedStarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedStarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FeedStarTests/Pods-FeedStarTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C9E9870D7EFB4C9A69F999B /* Pods_FeedStar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedStar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B85E40BB7E021F2E16662A23 /* Pods_FeedStarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FeedStarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E505882D20694A1200C23994 /* FeedStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeedStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E505882F20694A1200C23994 /* FeedStarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStarUITests.swift; sourceTree = "<group>"; };
+		E505883120694A1200C23994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E522F8A5205534AB008DE59B /* FeedStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeedStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E522F8A8205534AB008DE59B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E522F8AA205534AB008DE59B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E505882A20694A1200C23994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E522F8A2205534AB008DE59B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,12 +113,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E505882E20694A1200C23994 /* FeedStarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E505882F20694A1200C23994 /* FeedStarUITests.swift */,
+				E505883120694A1200C23994 /* Info.plist */,
+			);
+			path = FeedStarUITests;
+			sourceTree = "<group>";
+		};
 		E522F89C205534AB008DE59B = {
 			isa = PBXGroup;
 			children = (
 				E53435D7205E7FEE008F5371 /* Config */,
 				E522F8A7205534AB008DE59B /* FeedStar */,
 				E58B19DF206698FF000F6600 /* FeedStarTests */,
+				E505882E20694A1200C23994 /* FeedStarUITests */,
 				E522F8A6205534AB008DE59B /* Products */,
 				7FCF9E99946DA878DFAE662A /* Pods */,
 				49D8085A4C7A429B5F3CBF87 /* Frameworks */,
@@ -112,6 +140,7 @@
 			children = (
 				E522F8A5205534AB008DE59B /* FeedStar.app */,
 				E58B19DE206698FE000F6600 /* FeedStarTests.xctest */,
+				E505882D20694A1200C23994 /* FeedStarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +182,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E505882C20694A1200C23994 /* FeedStarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E505883720694A1200C23994 /* Build configuration list for PBXNativeTarget "FeedStarUITests" */;
+			buildPhases = (
+				E505882920694A1200C23994 /* Sources */,
+				E505882A20694A1200C23994 /* Frameworks */,
+				E505882B20694A1200C23994 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E505883320694A1200C23994 /* PBXTargetDependency */,
+			);
+			name = FeedStarUITests;
+			productName = FeedStarUITests;
+			productReference = E505882D20694A1200C23994 /* FeedStarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E522F8A4205534AB008DE59B /* FeedStar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E522F8C2205534AB008DE59B /* Build configuration list for PBXNativeTarget "FeedStar" */;
@@ -204,6 +251,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = K.oda;
 				TargetAttributes = {
+					E505882C20694A1200C23994 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E522F8A4205534AB008DE59B;
+					};
 					E522F8A4205534AB008DE59B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -230,11 +282,19 @@
 			targets = (
 				E522F8A4205534AB008DE59B /* FeedStar */,
 				E58B19DD206698FE000F6600 /* FeedStarTests */,
+				E505882C20694A1200C23994 /* FeedStarUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E505882B20694A1200C23994 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E522F8A3205534AB008DE59B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +442,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E505882920694A1200C23994 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E505883020694A1200C23994 /* FeedStarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E522F8A1205534AB008DE59B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +472,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E505883320694A1200C23994 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E522F8A4205534AB008DE59B /* FeedStar */;
+			targetProxy = E505883220694A1200C23994 /* PBXContainerItemProxy */;
+		};
 		E58B19E4206698FF000F6600 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E522F8A4205534AB008DE59B /* FeedStar */;
@@ -431,6 +504,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E505883420694A1200C23994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 652CM8YVDB;
+				INFOPLIST_FILE = FeedStarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = oda.kazuya.FeedStarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeedStar;
+			};
+			name = Debug;
+		};
+		E505883520694A1200C23994 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 652CM8YVDB;
+				INFOPLIST_FILE = FeedStarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = oda.kazuya.FeedStarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeedStar;
+			};
+			name = Release;
+		};
+		E505883620694A1200C23994 /* Adhoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 652CM8YVDB;
+				INFOPLIST_FILE = FeedStarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = oda.kazuya.FeedStarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FeedStar;
+			};
+			name = Adhoc;
+		};
 		E522F8C0205534AB008DE59B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -702,6 +820,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E505883720694A1200C23994 /* Build configuration list for PBXNativeTarget "FeedStarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E505883420694A1200C23994 /* Debug */,
+				E505883520694A1200C23994 /* Release */,
+				E505883620694A1200C23994 /* Adhoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E522F8A0205534AB008DE59B /* Build configuration list for PBXProject "FeedStar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

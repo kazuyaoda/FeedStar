@@ -60,6 +60,7 @@ class ViewController: UIViewController {
         print("lifecycle", #function)
     }
     
+    /// <#Description#>
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -81,6 +82,11 @@ class ViewController: UIViewController {
     
     
     // MARK: Private method
+    
+    /// plistから値を取得する
+    ///
+    /// - Parameter key: plistのkey
+    /// - Returns: plistの値
     func infoForKey(_ key: String) -> String? {
         
         if let path = Bundle.main.path(forResource: "Info", ofType: "plist"){
